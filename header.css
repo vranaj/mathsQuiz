@@ -1,0 +1,75 @@
+.header_container, .options_container, .fast_slow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_container{
+    width: 1180px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+}
+.music_container{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.audio_container{
+    position: absolute;
+    top: 0px;
+    left: 250px;
+    display: none;
+}
+.audio_one, .audio_two{
+    width: 100px;
+    height: 45px;
+    line-height: 45px;
+    background-color: aqua;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.audio_one:hover, .audio_two:hover, .choose:hover, .ask_hint:hover, .check_answer:hover, .next_question:hover{
+    opacity: 0.7;
+}
+.choose, .ask_hint, .check_answer, .next_question{
+    background-color: aqua;
+    padding: 0px 20px 0px 20px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+/* , .check_answer, .next_question */
+.ask_hint{
+    margin-right: 10px;
+}
+.options_container{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+/* .fast_slow{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fast, .slow{
+    height: 35px;
+    line-height: 35px;
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+} */

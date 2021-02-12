@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="./header.css">
+    
+    <script type="text/x-mathjax-config">
+		MathJax.Hub.Config({tex2jax: {inlineMath: [['$', '$'], ['\\(','\\)']]}});
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_SVG"></script>
+    <link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+    <script src="https://tikzjax.com/v1/tikzjax.js"></script>
+    <script src="../../../../../Downloads/Basic Drills _ Nov 2020/Basic Drills _ Nov 2020/quiz.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+</head>
+<body>
+    <div class="context">
+        <div id="quiz" class="area">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="header_container">
+                <div class="music_container">
+                    <div class="choose">
+                        Change Study Music
+                    </div>
+                    <div class="audio_container">
+                        <div class="audio_one">
+                            Audio One
+                        </div>
+                        <div class="audio_two">
+                            Audio Two
+                        </div>
+                        <audio id="audioChange" src="./audio/Binaural.mp3" autoplay loop>
+                        <p>Your Browser Doesn't Support Audio</p>
+                        </audio>
+                    </div>
+                </div>
+                <h1>SAT Math Quiz</h1>
+                <div class="options_container">
+                    <div class="ask_hint">
+                        Ask Hint
+                    </div>
+                    <div class="check_answer">
+                        Check Answer
+                    </div>
+                    <!-- <div class="next_question">
+                        Next Question
+                    </div>
+                    <div class="fast_slow">
+                        <div class="fast">Fast</div>
+                        <div class="slow">Slow</div>
+                    </div> -->
+                </div>
+            </div>
+            <div id="quizSet">
+                <hr style="margin-bottom: 20px;">
+                <h1 id="question" class="animated"></h1>
+               
+    <div class="chart-container">
+    <canvas id="canvas" width="500" height="500"></canvas>
+</div>
+<!--div class="t"><table border="1"><tr><td></td><td colspan="5">Age in years</td><td></tr>
+
+<tr><td> Region </td><td>18 to 24</td><td>25 to 44</td><td>45 to 64</td><td>65 to 74</td><td>5 and older</td><td>Total</td></tr>
+
+<tr><td> Northest </td><td>2713</td><td>8159</td><td>10986</td><td>3342</td><td>2775</td><td>27975</td></tr>
+
+<tr><td> Midest </td><td>3453</td><td>11237</td><td>13867</td><td>4221</td><td>3350</td><td>36126</td></tr>
+
+<tr><td> South </td><td>3453</td><td>11237</td><td>13867</td><td>4221</td><td>3350</td><td>36126</td></tr>
+
+<tr><td> West </td><td>3453</td><td>11237</td><td>13867</td><td>4221</td><td>3350</td><td>36126</td></tr>
+
+<tr><td> Total </td><td>1466</td><td>47896</td><td>57795</td><td>18620</td><td>14080</td><td>153057</td></tr></table></div-->
+
+                <!--canvas id="canvas" width="500" height="400"></canvas-->
+                <div id="resultBox">
+                    <p id="result">Quiz Finished</p>
+                </div>
+            </div>
+            <div class="hint_container">
+                <h2 id="hint"></h2>
+            </div>
+            <div class="answer_container">
+                <h2 class="answer"></h2>
+            </div>
+            <footer>
+                <hr style="margin-bottom: 20px;">
+                <p id="progress">Question 1 of 10</p>
+                <div id="timer"></div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./question.js"></script>
+    <script src="./quiz.js"></script>
+</body>
+</html>
